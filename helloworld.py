@@ -1,5 +1,5 @@
-from metaflow import Flowspec, step
-class Helloworld(Flowspec):
+from metaflow import FlowSpec, step
+class Helloworld(FlowSpec):
     @step
     def start(self):
         """starting point"""
