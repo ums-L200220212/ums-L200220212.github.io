@@ -1,3 +1,16 @@
-print("hello world")
-print ("hello world")
-print ("roni isa mahendra")
+from metaflow import Flowspec, step
+class Helloworld(Flowspec):
+    @step
+    def start(self):
+        """starting point"""
+        print("this is the start of the step")
+        self.next(self.hello)
+    def hello(self):
+        """processing hello"""
+        print ("hello world")
+        self.next(self.end)
+    def end(self):
+        """end of the process"""
+        print ("this is the end of the step")
+if __name__=='__main__':
+    Helloworld()
