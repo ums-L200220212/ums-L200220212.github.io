@@ -1,6 +1,6 @@
 from metaflow import FlowSpec, step
 
-class KuliahInformatika():
+class KI(FlowSpec):
     @step
     def start(self):
         """starting point"""
@@ -8,7 +8,7 @@ class KuliahInformatika():
         self.next(self.langkah1)
     @step
     def langkah1(self):
-        print("""bayar spp""")
+        print ("""bayar spp""")
         self.next(self.langkah2)
     @step
     def langkah2(self):
@@ -42,4 +42,4 @@ class KuliahInformatika():
     def end(self):
         print("proses berakhir")
 if __name__=='__main__':
-    KuliahInformatika()
+    KI()
