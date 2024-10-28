@@ -40,4 +40,5 @@ class KuliahInformatika():
     @step
     def end(self):
         print("proses berakhir")
-        
+if __name__ == '__main__':
+    KuliahInformatika()
