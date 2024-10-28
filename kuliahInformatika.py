@@ -3,6 +3,7 @@ from metaflow import FlowSpec, step
 class KuliahInformatika():
     @step
     def start(self):
+        """starting point"""
         print("""memuilai process""")
         self.next(self.langkah1)
     @step
