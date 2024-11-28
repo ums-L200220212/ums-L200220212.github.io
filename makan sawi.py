@@ -1,0 +1,1 @@
+print ("aku mau makan sawi")
